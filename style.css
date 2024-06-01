@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --bgcolor: #fafafe;
+  --dorange: #f65d46;
+  --lorange: #ffa95d;
+  --inactive: #ffc592;
+  --dbrown: #3b1d2c;
+  --next: #a3e6d1;
+  --nextactive: #2aad86;
+  --quit: #ff457d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jersey 25", sans-serif;
+  color: var(--dbrown);
+  background-color: var(--bgcolor);
+  min-height: 100vh;
+  padding: 3rem 4.5rem 0 4.5rem;
+}
+
+/* Header */
+header {
+  background-color: var(--dbrown);
+  color: var(--white);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 1.2rem;
+  box-shadow: 16px 16px 32px #c1c1c1, -16px -16px 32px #ffffff;
+  margin-bottom: 5rem;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  letter-spacing: 4px;
+}
+
+header h1 .head--span {
+  color: var(--lorange);
+}
+
+/* Main starts */
+.app {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.app .category {
+  width: 50%;
+  height: 32rem;
+  display: flex;
+}
+.app .category .category--main {
+  height: inherit;
+  width: 25rem;
+  margin-right: 3.5rem;
+}
+
+.app .category .category--main h2 {
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 2.6rem;
+}
+
+.app .category .category--main .category--topics {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app .category .category--main .category--topics .topics {
+  padding: 1.2rem 0;
+  color: var(--white);
+  cursor: pointer;
+  border: 3px solid var(--dbrown);
+  border-bottom: 5px solid var(--dbrown);
+  background-color: var(--dorange);
+  border-radius: 0.8rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  text-align: center;
+  transition: all 0.1s ease-in;
+}
+
+.app .category .category--main .category--topics .topics:active {
+  transform: translate(0%, 4px);
+  background-color: var(--lorange);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.253);
+}
+
+.app .category .category--main .category--topics .active {
+  pointer-events: none;
+}
+
+.app .category .category--main .category--topics .inactive {
+  pointer-events: none;
+  background-color: var(--inactive);
+  border-color: #5f5f5f;
+}
+
+.app .category .fimage img {
+  height: 36rem;
+  margin-top: 0.7rem;
+}
+
+.app .quiz-board {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease-in;
+}
+
+.app .quiz-board .quiz-heading {
+  width: 100%;
+  margin-bottom: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app .quiz-board .quiz-heading .timer-div {
+  display: flex;
+  align-items: center;
+  background-color: var(--dorange);
+  padding: 0.6rem 2rem;
+  width: 7.5rem;
+  border-radius: 0.8rem;
+  transition: all 0.1s ease-in;
+  /* Dynamically change */
+  opacity: 0;
+}
+
+.app .quiz-board .quiz-heading .timer-div img {
+  width: 20px;
+  filter: invert(1);
+}
+
+.app .quiz-board .quiz-heading .timer-div .time-left {
+  margin-left: 0.6rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.app .quiz-board .quiz-heading h2 {
+  font-size: 2.2rem;
+}
+
+.app .quiz-board .quiz {
+  position: relative;
+  height: 28rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+  background: url(./images/bg.jpg) center;
+  background-position: center;
+  background-size: cover;
+}
+
+.app .quiz-board .quiz .quiz--main {
+  height: inherit;
+  background-color: var(--lorange);
+  border: 5px solid var(--dbrown);
+  border-bottom: 7px solid var(--dbrown);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  transition: all 0.1s ease-in-out;
+  /* Dynamically change */
+  opacity: 0;
+}
+
+.app .quiz-board .quiz .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  border-radius: 0.8rem;
+  z-index: 5;
+}
+
+.app .quiz-board .quiz .overlay .overlay-text {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app .quiz-board .quiz .overlay .overlay-text h3 {
+  color: var(--white);
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+.app .quiz-board .quiz .question {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: justify;
+  margin-bottom: 1.3rem;
+}
+.app .quiz-board .quiz .options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.app .quiz-board .quiz .options .option {
+  border: 3px solid var(--white);
+  background-color: var(--white);
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.app .quiz-board .quiz .options .option:hover {
+  background-color: #e7e7e7;
+}
+
+.app .quiz-board .quiz .options .option p {
+  padding: 0.8rem 1rem;
+  font-weight: 500;
+}
+
+.app .quiz-board .quiz .options .option--correct {
+  border: 3px solid var(--nextactive);
+}
+
+.app .quiz-board .quiz .options .option--wrong {
+  border: 3px solid var(--quit);
+}
+
+.app .quiz-board .quiz .options .option--wrong p {
+  background-color: #ff457d5e;
+  border-radius: 0.4rem;
+}
+
+.app .quiz-board .quiz .options .option--correct p {
+  background-color: #2aad865e;
+  border-radius: 0.4rem;
+}
+
+.app .quiz-board .quiz .options .option--disabled {
+  pointer-events: none;
+}
+
+.app .quiz-board .btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app .quiz-board .btns .btn {
+  padding: 1rem 2.5rem;
+  color: var(--white);
+  cursor: pointer;
+  border: 3px solid var(--dbrown);
+  border-bottom: 5px solid var(--dbrown);
+  background-color: var(--dorange);
+  border-radius: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  transition: all 0.1s ease-in;
+}
+
+.app .quiz-board .btns .next {
+  background-color: var(--next);
+  color: #ffefed;
+  border-color: #5f5f5f;
+  pointer-events: none;
+}
+.app .quiz-board .btns .quit {
+  background-color: var(--quit);
+}
+
+.app .quiz-board .btns .btn--active {
+  background-color: var(--nextactive);
+  border-color: var(--dbrown);
+  pointer-events: auto;
+}
+
+.app .quiz-board .btns .btn:active {
+  transform: translate(0%, 4px);
+  background-color: var(--white);
+  color: var(--dorange);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.253);
+}
+
+.app .quiz-board .btns .summary {
+  font-size: 1.6rem;
+  color: var(--dorange);
+  transition: all 0.1s ease-in;
+  /* Dynamically change */
+  opacity: 0;
+}
+
+.app .quiz-board .btns .summary .sum--point {
+  color: var(--dbrown);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Modal starts */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  z-index: 10;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal .content {
+  background-color: var(--bgcolor);
+  padding: 3.8rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s;
+  transform: translateY(10%);
+}
+
+.modal .content .modal_img {
+  width: 175px;
+  margin-bottom: 0.75rem;
+}
+
+.modal .content h2 {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  color: var(--dbrown);
+  margin-bottom: 0.4rem;
+}
+
+.modal .content p {
+  color: var(--dbrown);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+}
+
+.modal .content .mbtn {
+  padding: 0.7rem 2.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 0.6rem;
+  border: 2px solid var(--lorange);
+  background-color: var(--dorange);
+  color: var(--white);
+}
+
+.modal .content .mbtn:active {
+  transform: translate(0%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.modal .content .mbtn:focus {
+  outline: none;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(12px);
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Show modal */
+.show-modal {
+  visibility: visible;
+  opacity: 1;
+}
+
+.show-modal .content {
+  transform: translateY(0);
+}
+
+/* Footer starts */
+footer {
+  background-color: var(--dbrown);
+  color: var(--white);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.8rem;
+}
+
+footer p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+footer .owner {
+  color: var(--lorange);
+  text-decoration: none;
+}

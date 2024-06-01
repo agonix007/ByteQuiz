@@ -1,0 +1,432 @@
+[
+  {
+    "name": "Java",
+    "questions": [
+      {
+        "question": "Which component is used to compile, debug and execute the java programs?",
+        "options": ["JRE", "JIT", "JDK", "JVM"],
+        "answer": "JDK"
+      },
+      {
+        "question": "Which one of the following is not a Java feature?",
+        "options": [
+          "Object-oriented",
+          "Use of pointers",
+          "Portable",
+          "Dynamic and Extensible"
+        ],
+        "answer": "Use of pointers"
+      },
+      {
+        "question": "Which environment variable is used to set the java path?",
+        "options": ["MAVEN_Path", "JavaPATH", "JAVA", "JAVA_HOME"],
+        "answer": "JAVA_HOME"
+      },
+      {
+        "question": "Which exception is thrown when java is out of memory?",
+        "options": [
+          "MemoryError",
+          "OutOfMemoryError",
+          "MemoryOutOfBoundsException",
+          "MemoryFullException "
+        ],
+        "answer": "OutOfMemoryError"
+      },
+      {
+        "question": "Which of these are selection statements in Java?",
+        "options": ["break", "continue", "for()", "if()"],
+        "answer": "if()"
+      },
+      {
+        "question": "Which of these statements is incorrect about Thread?",
+        "options": [
+          "start() method is used to begin execution of the thread",
+          "run() method is used to begin execution of a thread before start() method in special cases",
+          "A thread can be formed by implementing Runnable interface only",
+          "A thread can be formed by a class that extends Thread class"
+        ],
+        "answer": "run() method is used to begin execution of a thread before start() method in special cases"
+      },
+      {
+        "question": "Which of these keywords are used for the block to be examined for exceptions?",
+        "options": ["check", "throw", "catch", "try"],
+        "answer": "try"
+      },
+      {
+        "question": "Which of the following is a superclass of every class in Java?",
+        "options": ["ArrayList", "Abstract class", "Object class", "String"],
+        "answer": "Object class"
+      },
+      {
+        "question": "What is the extension of compiled java classes?",
+        "options": [".txt", ".js", ".class", ".java"],
+        "answer": ".class"
+      },
+      {
+        "question": "What is Truncation in Java?",
+        "options": [
+          "Floating-point value assigned to a Floating type",
+          "Floating-point value assigned to an integer type",
+          "Integer value assigned to floating type",
+          "Integer value assigned to floating type"
+        ],
+        "answer": "Floating-point value assigned to an integer type"
+      }
+    ]
+  },
+  {
+    "name": "Operating System",
+    "questions": [
+      {
+        "question": "What is the main function of the command interpreter?",
+        "options": [
+          "to provide the interface between the API and application program",
+          "to handle the files in the operating systemc",
+          "to get and execute the next user-specified command",
+          "none of the mentioned"
+        ],
+        "answer": "to get and execute the next user-specified command"
+      },
+      {
+        "question": "CPU scheduling is the basis of ___________",
+        "options": [
+          "multiprogramming operating systems",
+          "larger memory sized systems",
+          "multiprocessor systems",
+          "none of the mentioned"
+        ],
+        "answer": "multiprogramming operating systems"
+      },
+      {
+        "question": "If a process fails, most operating system write the error information to a ______",
+        "options": [
+          "new file",
+          "another running process",
+          "log file",
+          "none of the mentioned"
+        ],
+        "answer": "log file"
+      },
+      {
+        "question": "In a timeshare operating system, when the time slot assigned to a process is completed, the process switches from the current state to?",
+        "options": [
+          "Suspended state",
+          "Terminated state",
+          "Ready state",
+          "Blocked state"
+        ],
+        "answer": "Ready state"
+      },
+      {
+        "question": "A deadlock avoidance algorithm dynamically examines the __________ to ensure that a circular wait condition can never exist.",
+        "options": [
+          "operating system",
+          "resources",
+          "system storage state",
+          "resource allocation state"
+        ],
+        "answer": "resource allocation state"
+      },
+      {
+        "question": "For an effective operating system, when to check for deadlock?",
+        "options": [
+          "every time a resource request is made at fixed time intervals",
+          "at fixed time intervals",
+          "every time a resource request is made",
+          "none of the mentioned"
+        ],
+        "answer": "every time a resource request is made at fixed time intervals"
+      },
+      {
+        "question": "For real time operating systems, interrupt latency should be ___________",
+        "options": [
+          "zero",
+          "minimal",
+          "maximum",
+          "dependent on the scheduling"
+        ],
+        "answer": "minimal"
+      },
+      {
+        "question": "The FCFS algorithm is particularly troublesome for ____________",
+        "options": [
+          "operating systems",
+          "multiprocessor systems",
+          "time sharing systems",
+          "multiprogramming systems"
+        ],
+        "answer": "time sharing systems"
+      },
+      {
+        "question": "The portion of the process scheduler in an operating system that dispatches processes is concerned with ____________",
+        "options": [
+          "assigning ready processes to waiting queue",
+          "assigning running processes to blocked queue",
+          "assigning ready processes to CPU",
+          "all of the mentioned"
+        ],
+        "answer": "assigning ready processes to CPU"
+      },
+      {
+        "question": "Transient operating system code is a code that ____________",
+        "options": [
+          "stays in the memory always",
+          "never enters the memory space",
+          "comes and goes as needed",
+          "is not easily accessible"
+        ],
+        "answer": "comes and goes as needed"
+      },
+      {
+        "question": "In Unix, which system call creates the new process?",
+        "options": ["create", "fork", "new", "none of the mentioned"],
+        "answer": "fork"
+      }
+    ]
+  },
+  {
+    "name": "DBMS",
+    "questions": [
+      {
+        "question": "Who created the first DBMS?",
+        "options": [
+          "Edgar Frank Codd",
+          "Charles Bachman",
+          "Charles Babbage",
+          "Sharon B. Codd"
+        ],
+        "answer": "Charles Bachman"
+      },
+      {
+        "question": "Which of the following is not a type of database?",
+        "options": ["Hierarchical", " Network", "Distributed", "Decentralized"],
+        "answer": "Decentralized"
+      },
+      {
+        "question": "What is information about data called?",
+        "options": ["Hyper data", "Tera data", "Meta data", "Relations"],
+        "answer": "Meta data"
+      },
+      {
+        "question": "Which SQL command is used to remove a table from a database?",
+        "options": ["DELETE", "DROP", "REMOVE", "TRUNCATE"],
+        "answer": "DROP"
+      },
+      {
+        "question": "What does ACID stand for in database systems?",
+        "options": [
+          "Accuracy, Consistency, Isolation, Durability",
+          "Atomicity, Consistency, Isolation, Durability",
+          "Atomicity, Consistency, Isolation, Dependency",
+          "Atomicity, Concurrency, Isolation, Durability"
+        ],
+        "answer": "Atomicity, Consistency, Isolation, Durability"
+      },
+      {
+        "question": "Which forms have a relation that contains information about a single entity?",
+        "options": ["4NF", "5NF", "3NF", "1NF"],
+        "answer": "4NF"
+      },
+      {
+        "question": "What does a foreign key combined with a primary key create?",
+        "options": [
+          "Network model between the tables that connect them",
+          "Parent-Child relationship between the tables that connects them",
+          "One to many relationship between the tables that connects them",
+          "All of the mentioned"
+        ],
+        "answer": "Network model between the tables that connect them"
+      },
+      {
+        "question": "__________ command is used in SQL to issue multiple CREATE TABLE, CREATE VIEW and GRANT statements in a single transaction.",
+        "options": [
+          "CREATE CLUSTER",
+          "CREATE PACKAGE",
+          "CREATE SCHEMA",
+          "All of the mentioned"
+        ],
+        "answer": "CREATE SCHEMA"
+      },
+      {
+        "question": "The DBMS acts as an interface between ________________ and ________________ of an enterprise-class system.",
+        "options": [
+          "Data and the DBMS",
+          "Application and SQL",
+          "Database application and the database",
+          "The user and the software"
+        ],
+        "answer": "Database application and the database"
+      },
+      {
+        "question": "The query specifying the SQL view is said to be updatable if it meets which of the following conditions?",
+        "options": [
+          "select clause contains relation attribute names but not have expressions, aggregates, or distinct specification",
+          "from clause has 1 relation",
+          "query does not have group by or having clause",
+          "All of the mentioned"
+        ],
+        "answer": "All of the mentioned"
+      }
+    ]
+  },
+  {
+    "name": "Networking",
+    "questions": [
+      {
+        "question": "Which of the following is an example of Bluetooth?",
+        "options": [
+          "wide area network",
+          "virtual private network",
+          "local area network",
+          "personal area network"
+        ],
+        "answer": "personal area network"
+      },
+      {
+        "question": " What is the full form of OSI?",
+        "options": [
+          "optical service implementation",
+          "open service Internet",
+          "open system interconnection",
+          "operating system interface"
+        ],
+        "answer": "open system interconnection"
+      },
+      {
+        "question": "When a collection of various computers appears as a single coherent system to its clients, what is this called?",
+        "options": [
+          "mail system",
+          "networking system",
+          "computer network",
+          "distributed system"
+        ],
+        "answer": "distributed system"
+      },
+      {
+        "question": "Which protocol is used to send an email?",
+        "options": ["HTTP", "FTP", "SMTP", "IMAP"],
+        "answer": "SMTP"
+      },
+      {
+        "question": " Which one of the following is not a function of network layer?",
+        "options": [
+          "congestion control",
+          "error control",
+          "routing",
+          "inter-networking"
+        ],
+        "answer": "error control"
+      },
+      {
+        "question": " How is a single channel shared by multiple signals in a computer network?",
+        "options": [
+          "multiplexing ",
+          "phase modulation",
+          "analog modulation",
+          "digital modulation"
+        ],
+        "answer": "multiplexing"
+      },
+      {
+        "question": "Which layer does the data link layer take packets from and encapsulate them into frames for transmission?",
+        "options": [
+          "transport layer",
+          "application layer",
+          " network layer",
+          "physical layer"
+        ],
+        "answer": "network layer"
+      },
+      {
+        "question": "Which topology requires a multipoint connection?",
+        "options": ["Ring", "Bus", "Star", "Mesh"],
+        "answer": "Bus"
+      },
+      {
+        "question": "What was the name of the first network?",
+        "options": ["ASAPNET", "ARPANET", "CNNET", "NSFNET"],
+        "answer": "ARPANET"
+      }
+    ]
+  },
+  {
+    "name": "Software Engineering",
+    "questions": [
+      {
+        "question": "____________ is a software development activity that is not a part of software processes.",
+        "options": ["Validation", "Specification", "Development", "Dependence"],
+        "answer": "Dependence"
+      },
+      {
+        "question": "CASE stands for?",
+        "options": [
+          "Computer-Aided Software Engineering",
+          "Control Aided Science and Engineering",
+          "Cost Aided System Experiments",
+          "None of the mentioned"
+        ],
+        "answer": "Computer-Aided Software Engineering"
+      },
+      {
+        "question": "Why do bugs and failures occur in software?",
+        "options": [
+          "Because of Developers",
+          "Because of companies",
+          "Because of both companies and Developers",
+          "none of the mentioned"
+        ],
+        "answer": "Because of both companies and Developers"
+      },
+      {
+        "question": "The Cleanroom philosophy was proposed by _________",
+        "options": ["Linger", "Mills", "Dyer", "All of the mentioned"],
+        "answer": "All of the mentioned"
+      },
+      {
+        "question": "Who proposed the spiral model?",
+        "options": ["Barry Boehm ", "Pressman", "Royce", "IBM"],
+        "answer": "Barry Boehm"
+      },
+      {
+        "question": "Which of the following are CASE tools?",
+        "options": [
+          "Central Repository",
+          "Integrated Case Tools",
+          "Upper Case Tools",
+          " All of the mentioned"
+        ],
+        "answer": " All of the mentioned"
+      },
+      {
+        "question": "What are agile manifesto principles?",
+        "options": [
+          "Customer satisfaction",
+          "Face-to-face communication within a development team",
+          "Changes in requirements are welcome",
+          " All of the mentioned "
+        ],
+        "answer": " All of the mentioned"
+      },
+      {
+        "question": "Agile Software Development is based on which of the following type?",
+        "options": [
+          "Iterative Development",
+          "Incremental Development",
+          "Both Incremental and Iterative Development",
+          "Linear Development"
+        ],
+        "answer": "Both Incremental and Iterative Development"
+      },
+      {
+        "question": "__________ is not suitable for accommodating any change?",
+        "options": [
+          "RAD Model",
+          "Waterfall Model",
+          "Build & Fix Model",
+          "Prototyping Model"
+        ],
+        "answer": "Waterfall Model"
+      }
+    ]
+  }
+]

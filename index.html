@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Challenge your coding skills with our fun and engaging quiz web app, designed specifically for Indian computer science engineering students. Test your knowledge, learn new concepts, and compete with peers. Ready to level up your tech game?"
+    />
+    <meta name="author" content="Group H" />
+    <meta
+      name="keyword"
+      content="quiz, html, css, javascript, webdev, development, creativity, designing"
+    />
+    <meta property="og:image" content="https://i.ibb.co/VTf0PVc/og-image.jpg" />
+    <meta
+      property="og:description"
+      content="Challenge your coding skills with our fun and engaging quiz web app, designed specifically for Indian computer science engineering students. Test your knowledge, learn new concepts, and compete with peers. Ready to level up your tech game?"
+    />
+
+    <title>ByteQuiz</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"
+      defer
+    ></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Starts -->
+    <header>
+      <h1>
+        Get Ready to Challenge Your Mind with Byte<span class="head--span"
+          >Quiz</span
+        >!
+      </h1>
+    </header>
+    <!-- Header Ends -->
+
+    <!-- Main starts -->
+    <main class="app">
+      <!-- category -->
+      <section class="category">
+        <div class="category--main">
+          <h2>Dive Into any Topic...</h2>
+          <div class="category--topics">
+            <button class="topics" id="btnJava">Java</button>
+            <button class="topics" id="btnNet">Networking</button>
+            <button class="topics" id="btnOs">Operating System</button>
+            <button class="topics" id="btnDbms">DBMS</button>
+            <button class="topics" id="btnSe">Software Engineering</button>
+          </div>
+        </div>
+        <div class="fimage">
+          <img src="./images/u1.svg" alt="quiz" />
+        </div>
+      </section>
+      <!-- quiz board -->
+      <section class="quiz-board">
+        <div class="quiz-heading">
+          <h2>Quiz Board</h2>
+          <div class="timer-div">
+            <img src="./images/stopwatch.webp" alt="timer" />
+            <div class="time-left"><span class="time">10</span>s</div>
+          </div>
+        </div>
+        <div class="quiz">
+          <div class="quiz--main">
+            <p class="question">
+              1. The query specifying the SQL view is said to be updatable if it
+              meets which of the following conditions?
+            </p>
+            <div class="options">
+              <div class="option option--wrong">
+                <p>
+                  select clause contains relation attribute names but not have
+                  expressions, aggregates, or distinct specification
+                </p>
+              </div>
+              <div class="option"><p>from clause has 1 relation</p></div>
+              <div class="option">
+                <p>query does not have group by or having clause</p>
+              </div>
+              <div class="option option--correct">
+                <p>All of the mentioned</p>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h3>💎 Pick a Topic to Start Your Quiz Adventure! 💎</h3>
+            </div>
+          </div>
+        </div>
+        <div class="btns">
+          <button class="btn next">Next</button>
+          <div class="summary">
+            You're Ongoing <span class="sum--point sum--count">1</span> of
+            <span class="sum--point sum--total">10</span> Questions, Keep Going!
+          </div>
+          <button class="btn quit">Quit</button>
+        </div>
+      </section>
+    </main>
+    <!-- Main ends -->
+
+    <!-- Modal starts -->
+    <div class="modal">
+      <div class="content">
+        <img src="./images/star-trophy.png" alt="trophy" class="modal_img" />
+        <h2 class="score">5/10</h2>
+        <p class="message">Nice try, you'll crush it next time!</p>
+        <button class="mbtn close-modal">Give it another shot</button>
+      </div>
+    </div>
+    <div class="overlay2"></div>
+    <!-- Modal ends -->
+
+    <!-- Footer starts -->
+    <footer>
+      <p>
+        Copyright &copy; 2024 <a href="#" class="owner">Group H</a>, All Rights
+        Reserved.
+      </p>
+    </footer>
+    <!-- Footer ends -->
+  </body>
+</html>
