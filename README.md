@@ -32,10 +32,8 @@ The challenges which I faced is in the time of quiting any ongoing quiz. But I t
 
 ## Screenshots
 
-Before starting quiz...
 ![App Screenshot](https://i.ibb.co/pdYdY9M/bq1.png)
 
-After starting quiz...
 ![App Screenshot](https://i.ibb.co/t25KYvV/bq2.png)
 
 ## Optimizations
