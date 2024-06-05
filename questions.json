@@ -168,16 +168,6 @@
         "answer": "assigning ready processes to CPU"
       },
       {
-        "question": "Transient operating system code is a code that ____________",
-        "options": [
-          "stays in the memory always",
-          "never enters the memory space",
-          "comes and goes as needed",
-          "is not easily accessible"
-        ],
-        "answer": "comes and goes as needed"
-      },
-      {
         "question": "In Unix, which system call creates the new process?",
         "options": ["create", "fork", "new", "none of the mentioned"],
         "answer": "fork"
@@ -346,6 +336,16 @@
         "question": "What was the name of the first network?",
         "options": ["ASAPNET", "ARPANET", "CNNET", "NSFNET"],
         "answer": "ARPANET"
+      },
+      {
+        "question": "What does the acronym 'IP' stand for in networking?",
+        "options": [
+          "Internet Protocol",
+          "Internet Provider",
+          "Internal Program",
+          "Interconnected Protocol"
+        ],
+        "answer": "Internet Protocol"
       }
     ]
   },
@@ -426,6 +426,11 @@
           "Prototyping Model"
         ],
         "answer": "Waterfall Model"
+      },
+      {
+        "question": "Which of the following is a software development methodology?",
+        "options": ["Agile", "Binary", "HTTP", "None of the mentioned"],
+        "answer": "Agile"
       }
     ]
   }
