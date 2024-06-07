@@ -28,7 +28,7 @@ The challenges which I faced is in the time of quiting any ongoing quiz. But I t
 
 ## Project Link
 
-**Visit Now to dive into Creativity**: https://bytequiz.netlify.app/
+**Visit Now to dive into Creativity**: https://bytequiz8.vercel.app/
 
 ## Screenshots
 
